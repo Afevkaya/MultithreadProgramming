@@ -1,0 +1,29 @@
+# macOS specific files
+.DS_Store
+
+# Rider specific files
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories
+bin/
+obj/
+
+# Rider logs
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/modules.xml
+.idea/.rider/
+.idea/.idea/
+.idea/.idea_modules/
+.idea/.idea_modules.xml
+
+# SonarLint specific files
+.sonarlint/
