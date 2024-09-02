@@ -1,37 +1,37 @@
 ﻿#region Spinning
-// bool threadCondition = true;
-//
-// Thread threadOne = new(() => 
-// {
-//     while (true)
-//     {
-//         if(threadCondition)
-//         {
-//             for (int i = 1; i <= 10; i++)
-//                 System.Console.WriteLine($"Thread One : {i}");
-//             threadCondition = false;
-//             break;
-//         }
-//     }
-//     
-// });
-//
-// Thread threadTwo = new(() => 
-// {
-//     while(true)
-//     {
-//         if(!threadCondition)
-//         {
-//             
-//             for (int i = 10; i > 0; i--)
-//                 System.Console.WriteLine($"Thread Two : {i}");
-//             threadCondition = true;
-//         }
-//     }
-// });
-//
-// threadOne.Start();
-// threadTwo.Start();
+bool threadCondition = true;
+
+Thread threadOne = new(() => 
+{
+    while (true)
+    {
+        if(threadCondition)
+        {
+            for (int i = 1; i <= 10; i++)
+                System.Console.WriteLine($"Thread One : {i}");
+            threadCondition = false;
+            break;
+        }
+    }
+    
+});
+
+Thread threadTwo = new(() => 
+{
+    while(true)
+    {
+        if(!threadCondition)
+        {
+            
+            for (int i = 10; i > 0; i--)
+                System.Console.WriteLine($"Thread Two : {i}");
+            threadCondition = true;
+        }
+    }
+});
+
+threadOne.Start();
+threadTwo.Start();
 
 #endregion
 
